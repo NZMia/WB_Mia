@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MZ_NewFeature_WelcomeVC">
+            <connections>
+                <outlet property="icon" destination="qri-aH-tWh" id="mF5-Oc-btb"/>
+                <outlet property="iconConstraint" destination="baR-1A-mz5" id="FmG-dM-SXp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeTitle" destination="nmX-OM-hOH" id="sCd-mN-xr6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="Eug-OS-l17">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="qri-aH-tWh">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="0My-kT-SvA"/>
+                        <constraint firstAttribute="width" constant="100" id="Yd1-Gj-eVq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmX-OM-hOH">
+                    <rect key="frame" x="250" y="179.5" width="100" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Eug-OS-l17" secondAttribute="trailing" id="1o2-9I-Ngm"/>
+                <constraint firstAttribute="centerX" secondItem="qri-aH-tWh" secondAttribute="centerX" id="8dW-9m-kJB"/>
+                <constraint firstItem="qri-aH-tWh" firstAttribute="trailing" secondItem="nmX-OM-hOH" secondAttribute="trailing" id="EkA-iC-ESp"/>
+                <constraint firstAttribute="centerX" secondItem="nmX-OM-hOH" secondAttribute="centerX" id="It2-Gl-RDz"/>
+                <constraint firstAttribute="bottom" secondItem="Eug-OS-l17" secondAttribute="bottom" id="Ofi-fR-Cxn"/>
+                <constraint firstItem="Eug-OS-l17" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PBU-AX-5Wg"/>
+                <constraint firstAttribute="centerY" secondItem="qri-aH-tWh" secondAttribute="centerY" id="baR-1A-mz5"/>
+                <constraint firstItem="qri-aH-tWh" firstAttribute="leading" secondItem="nmX-OM-hOH" secondAttribute="leading" id="idu-qL-Evv"/>
+                <constraint firstAttribute="centerY" secondItem="nmX-OM-hOH" secondAttribute="centerY" constant="100" id="lRq-y6-XSa"/>
+                <constraint firstItem="Eug-OS-l17" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pSs-sY-RwW"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="320" height="480"/>
+        <image name="avatar_default" width="50" height="50"/>
+    </resources>
+</document>
