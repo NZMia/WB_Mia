@@ -54,7 +54,7 @@
 {
    
     self.repostButton = [self buttonWithBottomImageName:@"timeline_icon_retweet" andTitle:@"Repost"];
-    self.commontButton = [self buttonWithBottomImageName:@"timeline_icon_comment" andTitle:@"Commont"];
+    self.commontButton = [self buttonWithBottomImageName:@"timeline_icon_comment" andTitle:@"Comment"];
     self.likeButton =[self buttonWithBottomImageName:@"timeline_icon_unlike" andTitle:@"Like"];
     
 }
